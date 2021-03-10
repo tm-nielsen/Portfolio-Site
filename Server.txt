@@ -1,0 +1,5 @@
+Run this command and then go to this link to test stuff.
+
+python3 -m http.server
+
+http://localhost:8000/
