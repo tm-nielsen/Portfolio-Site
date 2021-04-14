@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+h1{
+    color: rgb(218, 184, 226);
+}
+
+p{
+    color: green;
+}
+
+li{
+    list-style-type: square;
+}
+
+.special{
+    color:orange;
+    font-weight: bold;
+}
+
+li em{
+    color: rebeccapurple;
+}
+
+body h1 + p.special{
+    font-size: 200%;
+}
+
+a:link{
+    color: pink;
+}
+
+a:visited{
+    color:lime;
+}
+
+a:hover{
+    text-decoration: none;
+}
