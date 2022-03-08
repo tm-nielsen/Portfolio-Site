@@ -1,0 +1,31 @@
+.game {
+    display: flex;
+    flex-direction: column;
+    background-color: cadetblue;
+    margin: 5%;
+    padding: 5%;
+    border-radius: 2%;
+}
+
+.game-title {
+    display: flex;
+    text-align: center;
+    font-size: xx-large;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+.game-cover {
+    display: flex;
+    min-height: 0;
+    size: 50%;
+}
+
+.game-date {
+    font-style: italic;
+    font-size: medium;
+}
+
+.game-desc {
+    font-size: x-large;
+}

@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import {Game} from './Game'
 const proxy = "https://cors-anywhere.herokuapp.com/"
 
 export const GameList = () => {
@@ -10,15 +11,20 @@ export const GameList = () => {
 
     const fetchData = async() => {
         const result = await fetch(
-            proxy + `https://itch.io/api/1/a0UxGQcqh11vRHLPE7HOOdoZvCc6zuiZfGI8LCah/my-games`
+            proxy + `https://itch.io/api/1/${process.env.REACT_APP_API_KEY}/my-games`
         )
         const data = await result.json()
+        setGames(data.games)
         console.log(data)
-        console.log("a0UxGQcqh11vRHLPE7HOOdoZvCc6zuiZfGI8LCah")
-        console.log(process.env.API_KEY)
     }
 
     return (
-        <div>GameList</div>
+        <div> Games List
+            <li>
+                {games.map((game, index) => 
+                    <Game title={game.title} desc={game.short_text} cover={game.cover_url} date={game.published_at} link={game.url} key={index}/>
+                )}
+            </li>
+        </div>
     )
 }
