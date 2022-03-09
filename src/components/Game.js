@@ -1,5 +1,5 @@
 import React from "react";
-import './game.css'
+import '../styling/game.css'
 
 export const Game = ({title, desc, cover, date, link}) => {
 

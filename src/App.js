@@ -1,18 +1,26 @@
 import React from 'react'
 // import {games} from './games'
 // import {Game} from './Game'
-import { GameList } from './GameList'
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import Header from './components/Header'
+import Home from './routes/Home'
+import About from './routes/About'
+import Games from './routes/Games'
+import Blog from './routes/Blog'
 
 const App = () => {
-  return <>
-    <h1>App</h1>
-    <GameList/>
-    {/* <li>
-      {games.map((game, index) => 
-        <Game title={game.title} desc={game.desc} cover={game.cover} link={game.link} key={index}/>
-      )}
-    </li> */}
-  </>
+  return <Router>
+    <Header/>
+    <Routes>
+      <Route exact path="/" element={<Home/>}/>
+      <Route path="/about" element={<About/>}/>
+      <Route path='/games' element={<Games/>}/>
+      <Route path='/blog' element={<Blog/>}/>
+      <Route path='*' element={
+        <h1>Error</h1>
+      }/>
+    </Routes>
+  </Router>
 }
 
 
