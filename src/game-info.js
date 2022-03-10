@@ -1,0 +1,1 @@
+// stores info to be displayed about specific games/game lists

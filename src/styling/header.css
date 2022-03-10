@@ -15,6 +15,8 @@
 
 .header-left {
     display: flex;
+    flex-direction: row;
+    padding-left: 1rem;
 }
 
 .header-mid {
@@ -22,9 +24,9 @@
 }
 
 .header-right {
-    background-color: aqua;
     display: flex;
-    align-items: flex-end;
+    flex-direction: row;
+    padding-right: 10rem;
 }
 
 .header-tab {
