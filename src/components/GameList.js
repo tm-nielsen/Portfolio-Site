@@ -14,7 +14,9 @@ export const GameList = () => {
             proxy + `https://itch.io/api/1/${process.env.REACT_APP_API_KEY}/my-games`
         )
         const data = await result.json()
-        setGames(data.games)
+        let games = data.games.filter(x => x.published === true)
+        games = games.sort((a, b) => (b.downloads_count - a.downloads_count))
+        setGames(games)
         console.log(data)
     }
 

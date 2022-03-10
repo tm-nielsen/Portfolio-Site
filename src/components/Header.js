@@ -5,10 +5,15 @@ import '../styling/header.css'
 const Header = () => {
   return (
       <div className="header">
-        <Link to="/" className="header-home">Home</Link>
-        <Link to="/about" className="header-tab">About me</Link>
-        <Link to="/games" className="header-tab">Games</Link>
-        <Link to="/blog" className="header-tab">Blog</Link>
+        <div className="header-left">
+          <Link to="/" className="header-tab">Home</Link>
+        </div>
+        <div className="header-mid"></div>
+        <div className="header-right">
+          <Link to="/about" className="header-tab">About me</Link>
+          <Link to="/games" className="header-tab">Games</Link>
+          <Link to="/blog" className="header-tab">Blog</Link>
+        </div>
       </div>
   )
 }
