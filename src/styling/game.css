@@ -48,6 +48,13 @@
     margin-right: 2vw;
     margin-left: 2vw;
 }
+.game-longdesc {
+    flex:1;
+    font-size: 3.5vmin;
+    margin-right: 2vw;
+    margin-left: 5vw;
+}
+
 
 .game-caret {
     width: 10vmin;

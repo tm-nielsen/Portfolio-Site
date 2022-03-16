@@ -22,7 +22,11 @@ export const Game = ({title, desc, cover, date, link}) => {
                     <BiCaretDown className={expand?"game-caret-clicked":'game-caret'}
                     onClick={()=>setExpand(!expand)}/>
                 </div>
-                {expand?<h3 className="game-desc">{descriptions[title]}</h3>: null}
+                {expand?<h3 className="game-longdesc">{
+                    (title in descriptions)?descriptions[title]:
+                    'Looks like I don\'t have anything written for this one,' +
+                    'but there\'s bound to be more info in the itch.io page'
+                }</h3>: null}
             </article>
         </div>
         
