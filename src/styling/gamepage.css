@@ -1,0 +1,32 @@
+.gamepage-header {
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+}
+
+.gamepage-title-box {
+    margin-left: 5vw;
+}
+
+.gamepage-title {
+    font-size: 20vmin;
+}
+
+.gamepage-icon-box {
+    padding-left:10vw;
+    align-items: flex-end;
+}
+
+.gamepage-icon {
+    width: 80%;
+    height:auto;
+    color:#4275d4;
+}
+.gamepage-icon:hover {
+    color: #477fe7
+}
+
+.gamepage-desc {
+    padding: 10% 5%;
+    font-size: 6vmin;
+}

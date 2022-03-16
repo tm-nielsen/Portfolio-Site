@@ -22,7 +22,7 @@ export const GameList = () => {
     }
 
     return (
-        <div> Games List
+        <div>
             <li>
                 {games.map((game, index) => 
                     <Game title={game.title} desc={game.short_text} cover={game.cover_url} date={game.published_at} link={game.url} key={index}/>
