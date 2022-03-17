@@ -17,7 +17,8 @@ const Header = () => {
             <BiBody className='header-icon'/>About me
           </Link>
           <Link to="/games" className="header-tab">
-            <BiGame className="header-icon"/>Games</Link>
+            <BiGame className="header-icon"/>Games
+          </Link>
           <Link to="/blog" className="header-tab">
             <BiBookContent className='header-icon'/>Blog
           </Link>
