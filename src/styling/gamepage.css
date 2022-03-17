@@ -9,16 +9,16 @@
 }
 
 .gamepage-title {
-    font-size: 20vmin;
+    font-size: 10vw;
 }
 
 .gamepage-icon-box {
-    padding-left:10vw;
+    padding-left:5vw;
     align-items: flex-end;
 }
 
 .gamepage-icon {
-    width: 80%;
+    width: 30vmin;
     height:auto;
     color:#4275d4;
 }
@@ -28,5 +28,5 @@
 
 .gamepage-desc {
     padding: 10% 5%;
-    font-size: 6vmin;
+    font-size: 3vw;
 }
