@@ -8,9 +8,9 @@
     flex: 1;
     flex-direction: row;
     max-width:100%;
-    max-height: 6vmin;
+    max-height: 3vw;
     height: fit-content;
-    padding: 1vmin 0;
+    padding: 1vw 0;
     background-color: darkslateblue;
     align-items:center;
 }
@@ -36,13 +36,13 @@
 
 .header-tab {
     flex:1;
-    font-size: 4vmin;
+    font-size: 3vw;
     min-width: 0;
-    padding: 0.2vmin 2vmin;
-    margin: 1vmin;
+    padding: 0.2vw 1vw;
+    margin: 0.5vw;
     width: fit-content;
     height:fit-content;
-    border-radius: 1vmin;
+    border-radius: 0.5vw;
     background-color: #1d345e;
     color: #4275d4;
     text-decoration: none;
@@ -52,8 +52,8 @@
 }
 
 .header-icon {
-    height: 4vmin;
+    height: 3vw;
     width:auto;
-    padding: 0 1vmin;
+    padding: 0 0.5vw;
     /* background-color: red; */
 }
