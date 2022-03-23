@@ -1,0 +1,25 @@
+.proficiency-set {
+    display: flex;
+    flex:1;
+}
+
+.proficiency-header {
+    flex:2;
+    font-size: 5vw;
+    margin-left: 5vw;
+}
+
+.proficiency-list {
+    flex:0.5;
+    background-color: #1d345e;
+    padding: 2vw;
+    border: 1vw;
+    border-style:solid;
+    margin-right: 10vw;
+}
+
+.proficiency {
+    flex:1;
+    margin: 0 2vw;
+    font-size: 2vw;
+}

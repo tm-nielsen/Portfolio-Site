@@ -1,0 +1,24 @@
+.about {
+    display:flex;
+    flex:1;
+    flex-direction: column;
+}
+
+.about-header {
+    flex:1;
+    font-size: 5vw;
+    text-align: centre;
+}
+
+.about-title {
+    flex:1;
+    font-size: 8vw;
+    text-align: end;
+    margin: 0 10vw;
+}
+
+/* .about-prof-box {
+    display: flex;
+    flex:1;
+    flex-direction: row;
+} */
