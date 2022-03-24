@@ -8,15 +8,17 @@ const ProficiencySet = ({desc, value, list, typeFilter}) => {
   const getStars = () => {
     let stars = []
     for(var i = 0; i < value; i++)
-      stars.push(<BiStar/>)
+      stars.push(<BiStar className="proficiency-icon"/>)
     return stars
   }
 
   return (
     <div className="proficiency-set">
       <div className="proficiency-header">
-        <h1 className="proficiency-header">{desc}</h1>
-        {getStars()}
+        <div className="proficiency-icon-box">
+          {getStars()}
+        </div>
+        <h1 className="proficiency-label">{desc}</h1>
       </div>
       <ol className="proficiency-list">
         {list.map((item, index) => <Proficiency key={index} title={item.title}

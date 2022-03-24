@@ -12,12 +12,12 @@ const About = () => {
       <p className="about-header">
         This is a section all about me and the things I can do, and some that I can kinda do, but not really very well.
       </p>
-      <h1 className="about-title">Proficiencies</h1>
+      <h1 className="about-title">Proficiencies:</h1>
       <div className="about-prof-box">
         {
-          [1, 2, 3].map((num)=>
-            <ProficiencySet desc='confident' typeFilter='none' value={num}
-              list={proficiencies.filter((x) => x.value === num)}/>
+          ['confident', 'adept', 'aquainted'].map((label, index)=>
+            <ProficiencySet desc={label} typeFilter='none' value={3-index}
+              list={proficiencies.filter((x) => x.value === (3-index))}/>
           )
         }
       </div>

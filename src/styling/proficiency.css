@@ -4,9 +4,29 @@
 }
 
 .proficiency-header {
-    flex:2;
-    font-size: 5vw;
+    display: flex;
+    flex-direction: row;
+    flex:1;
     margin-left: 5vw;
+}
+
+.proficiency-label {
+    font-size: 5vw;
+}
+
+.proficiency-icon-box {
+    width: 21vw;
+}
+
+.proficiency-icon {
+    display: flex;
+    flex:1;
+    height: 7vw;
+    width: auto;
+    /* width: 7vw;
+    height: auto; */
+    margin-right: 0;
+    margin-left: auto;
 }
 
 .proficiency-list {
